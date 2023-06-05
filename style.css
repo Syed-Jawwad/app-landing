@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("image/pexels-muffin-creatives-2468773.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  position: relative;
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: .4s linear;
+}
+
+.menu a:hover:before{
+    width: 90%;
+}
+
+.register a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: indianred;
+  border-radius: 9px;
+  transition: .6s;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+.h-text {
+  min-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+.h-text span{
+    letter-spacing: 5px;
+}
+.h-text h1{
+    font-size: 3.5rem;
+}
+.h-text a{
+    text-decoration: none;
+    background: indianred;
+    color: #fff;
+    padding: 10px 20px ;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+.h-text a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.76);
+}
+.footer .box-container .box{
+  flex: 1 1 20rem;
+  margin: 2rem;
+}
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  color: #eee;
+}
+.footer .box-container .box a{
+  font-size: 1.5rem;
+  display: block;
+  padding: .5rem 0;
+  color: #eee;
+}
+.footer .box-container .box a:hover{
+  letter-spacing: .2rem;
+}
+
+.footer .box-container .box .info{
+  display: flex;
+  text-align: center;
+}
+
+.footer .box-container .box .info i{
+  margin: .5rem 0;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  color: pink;
+  font-size: 1.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.footer .credit{
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: .1rem;
+  color: #fff;
+  border-top: .1rem solid #fff5 ;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.774);
+}
